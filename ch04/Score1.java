@@ -22,9 +22,10 @@ public class Score1 {
 			System.out.print(name[i]+"\t");
 			for(int j=0; j<score[i].length; j++) {
 				System.out.print(score[i][j]+"\t");
-				sum += score[i][j];
-				tot[j] += score[i][j];
+				sum += score[i][j]; // 행별 합계
+				tot[j] += score[i][j]; // 열별 합계
 			}
+			// 행별로 합계를 구하기 위하여
 			System.out.println(sum+"\t"+sum/score[i].length);
 			sum = 0;
 		}
