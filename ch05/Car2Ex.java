@@ -17,4 +17,5 @@ public class Car2Ex {
 		System.out.println("car2의 색상 : "+car2.color);
 		System.out.println("car2의 배기량 : "+car2.displacement);
 	}
+	
 }
