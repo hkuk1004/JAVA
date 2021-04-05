@@ -17,4 +17,7 @@ public class Person {
 			// return jumin == ((Person)obj).jumin;
 		} else return false;
 	}
+	public String toString() {
+		return "이름 : "+name +", 주민번호 : "+jumin + ", 나이 : "+age;
+	}
 }
