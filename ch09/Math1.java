@@ -6,6 +6,9 @@ public class Math1 {
 		float f2= 4.7f;
 		float f3= -4.1f;
 		float f4= -4.7f;
+		//round : 반올림 : 5이상이면 올리고 4이하면 버림
+		//ceil : 올림 : 현재의 숫자 이상인 정수 중에서 가장 작은 정수
+		//floor : 내림 : 현재의 숫자 이하인 정수 중에서 가장 큰 정수
 		System.out.println("f1 = " + Math.round(f1));
 		System.out.println("f1 = " + Math.ceil(f1));
 		System.out.println("f1 = " + Math.floor(f1));
