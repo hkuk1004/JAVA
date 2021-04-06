@@ -8,6 +8,7 @@ public class Except2 {
 			System.out.println("첫 번째 숫자를 입력하세요");
 			String str = sc.nextLine();
 			if(str.equals("x")) break;
+			// try catch로 예외하면 그 경우를 제외하고 계속 진행 할 수 있다
 			try {
 				num1 = Integer.parseInt(str);
 				System.out.println("두 번째 숫자를 입력하세요");
