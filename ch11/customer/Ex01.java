@@ -15,6 +15,8 @@ public class Ex01 {
 			// insert,id,암호,암호확인,이메일,이름 : 갯수 6인 배열
 			// insert,k1,1,1,k1@k.com,길동
 				insert(command.split(","));
+			else if (command.startsWith("update"))
+				update(command.split(","));
 			else if (command.startsWith("select")) 
 				select(command.split(","));
 			else if (command.equals("list"))
@@ -23,6 +25,10 @@ public class Ex01 {
 		}
 		sc.close();
 		System.out.println("프로그램 종료");
+	}
+	private static void update(String[] split) {
+		// TODO Auto-generated method stub
+		
 	}
 	private static void list() {
 		Collection<Customer> list = cs.list();
@@ -61,6 +67,7 @@ public class Ex01 {
 		System.out.println("잘못된 명령어 입니다");
 		System.out.println("다음 명령어에서 선택 하세요");
 		System.out.println("insert,id,암호,암호확인,이메일,이름");
+		System.out.println("update,id,암호,암호확인,이메일,이름");
 		System.out.println("select,id");
 		System.out.println("list");
 		System.out.println("exit");
