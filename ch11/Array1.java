@@ -20,5 +20,5 @@ public class Array1 {
 		while(its.hasNext()) { // 읽을 데이터를 가지고 있니
 			System.out.println(its.next()); // 그 다음 데이터를 가지고 와서 출력
 		}
-	}
+	}    
 }

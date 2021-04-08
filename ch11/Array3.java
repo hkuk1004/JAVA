@@ -15,7 +15,7 @@ public class Array3 {
 			// 인덱스 2번 데이터 지우고 출력
 			list.remove(2); print(list);
 			// 구렁이 지우고 출력
-			list.remove("구렁이"); print(list);
+			list.remove("구렁이"); print(list); // 앞에있는 구렁이 하나만 삭제
 		}
 		private static void print(ArrayList<String> list) {
 			for(String snake : list) {
