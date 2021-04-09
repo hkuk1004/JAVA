@@ -12,7 +12,12 @@ public class ActionEv1 extends Frame implements ActionListener{
 		setSize(300,300);
 		setVisible(true);
 		// ActionListener 버튼 클릭, List 또는 Choice에 선택,
-		btn.addActionListener(this);
+		btn.addActionListener(this); // 버튼을 누르는지 체크
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) { // x를 클릭했을때
+				System.exit(0); //프로그램 정상종료
+			}
+		});
 		
 	}
 	public static void main(String[] args) {
