@@ -15,7 +15,7 @@ public class Graphic1 extends Frame{
 	public void paint(Graphics g) {
 		g.drawLine(20, 30, 150, 170);
 		g.setColor(Color.yellow);
-		g.fillRect(20, 30, 100, 100);
+		g.fillRect(20, 30, 100, 100); 
 		g.drawOval(50,30,100,150);
 	}
 	public static void main(String[] args) {
