@@ -18,5 +18,8 @@ public class Lamda1Ex {
 				System.out.println("난 인터페이스 직접 재정의");
 			}
 		};
+		mc1.method();
+		mc1 = () -> {System.out.println("난 람다로 처리한 메서드");};
+		mc1.method();
 	}
 }
