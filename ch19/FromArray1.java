@@ -1,6 +1,7 @@
 package ch19;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -14,5 +15,9 @@ public class FromArray1 {
 		int[] intArray = {12,34,56,77,25};
 		IntStream stream2 = Arrays.stream(intArray);
 		stream2.forEach(n->System.out.println(n+","));
+		List<Student1> list = Arrays.asList(new Student1("세정",20),
+				new Student1("길동",25), new Student1("강다니엘", 22));
+		Stream<Student1> stream = list.stream();
+		stream.forEach(s->System.out.println(s.getName()));
 	}
 }
